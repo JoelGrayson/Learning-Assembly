@@ -1,5 +1,4 @@
 .global _start
-
 _start:
 	LDR R0, =list @ R0=iter (i)
 	LDR R1, [R0]  @ R1=item of lst
@@ -15,7 +14,8 @@ loop:
 exit:
 	MOV R7, #1
 	MOV R0, R2 @ $? is sum (should be 55)
+	SWI 0
 
 .data
 list:
-	.word 1,2,3,4,5,6,7,8,9,10,99
+	.word 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 99
