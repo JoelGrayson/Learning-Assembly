@@ -1,3 +1,5 @@
+@ For CPULator
+.text
 .global _start
 _start:
 	LDR R0, =list
@@ -9,8 +11,6 @@ _start:
 
 
 .data
-hello:
-	.ascii "Joel Grayson"
 list:
 	.word 1, 2, 4, -8
 
