@@ -1,6 +1,3 @@
-section .data
-	text db "Hello, World!", 10 ;10 is \n
-
 section .text
 	global _start
 
@@ -16,5 +13,9 @@ _start:
 	MOV rax, 60
 	MOV rdi, 1
 	SYSCALL
+
+
+section .data
+	text db "Hello, World!", 10 ;10 is \n
 
 
