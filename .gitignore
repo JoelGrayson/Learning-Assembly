@@ -1,5 +1,7 @@
-# No .o and no no extension
+# Must have an extension
 *
 !/**/
 !*.*
+
+# No object files
 *.o
